@@ -246,16 +246,80 @@ blockquote {
 }
 
 /* Footer layout rules */
-.footer {
+/* ==========================================
+   MODERN & INTERACTIVE FOOTER (FIXED)
+   ========================================== */
+footer {
+    background-color: #0a0a0c; /* Fallback deep space black */
+    background-color: var(--bg-dark, #0a0a0c);
+    border-top: 1px solid var(--border-color, #27272a);
+    padding: 40px 20px;
     width: 100%;
-    text-align: center;
-    padding: 24px 0;
-    font-size: 0.9rem;
-    color: #a1a1aa;
-    background-color: rgb(10, 10, 12);
-    margin-top: 40px;
+    margin-top: auto; /* Pushes footer to bottom if page content is short */
 }
 
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--bg-card, #121216);
+    border: 1px solid var(--border-color, #27272a);
+    color: var(--text-muted, #a1a1aa);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+    /* Forces the SVG path to use the text color layout */
+    stroke: currentColor; 
+    fill: none;
+}
+
+/* Hover Effects */
+.social-icon:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
+}
+
+.social-icon.github:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+.social-icon.youtube-social:hover {
+    color: #ff0000;
+    border-color: #ff0000;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.2);
+}
+
+.footer-copyright {
+    color: #52525b;
+    font-size: 0.85rem;
+    font-family: monospace;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
 @media (max-width: 600px) {
     header.main-header {
         position: static; /* Un-fixes navigation layout on narrow mobile displays for better spacing */
