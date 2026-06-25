@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About // Manthan Prototypes</title>
-    <!-- Relative link paths jumping up one folder back to root styles -->
-    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png?v=2">
+    <link rel="shortcut icon" href="../favicon/favicon.ico?v=2" type="image/x-icon">
+    <link rel="manifest" href="../favicon/site.webmanifest?v=2">
 </head>
 <body>
 
-    <!-- Global Navigation Header -->
-    <header>
-        <div class="logo">M_PROTOTYPES</div>
+    <!-- Global Navigation Header (Always stays at top) -->
+    <header class="main-header">
+        <div class="logo glow-text">Manthan Prototypes</div>
         <nav>
             <ul>
-                <li><a href="../index.html">Main</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="../index.html#hero">Home</a></li>
+                <li><a href="./about.html">About</a></li>
                 <li><a href="../index.html#desktech">DeskTech</a></li>
-                <li><a href="../projects/projects.html">Lab</a></li>
+                <li><a href="../projects/projects.html">Current Builds</a></li>
                 <li><a href="../index.html#contact">Connect</a></li>
             </ul>
         </nav>
@@ -26,97 +29,96 @@
 
     <div class="container">
         
+        <!-- Fixed: Changed from <header> to <div class="page-title"> -->
         <div class="page-title">
-            <h1>SYSTEM BIO<span>_</span></h1>
+            <h1>ABOUT<span>_</span></h1>
         </div>
 
-        <!-- Bio Blueprint Segment -->
-        <section id="blueprint" style="border: none; padding: 0;">
-            <h2>[01] Structural Blueprint</h2>
+        <section id="blueprint">
+            <h2>The Blueprint</h2>
             <p>I am an independent content creator, aspiring web developer, and robotics enthusiast. I focus on bridging the gap between physical hardware and digital code, engineering autonomous systems that interact with the physical world.</p>
             <p>Whether it is structuring custom electronics or drafting clean web interfaces, I design my systems with logic, precision, and a technical edge.</p>
         </section>
 
-        <!-- Technical Skill Matrix Diagnostics -->
         <section id="stack">
-            <h2>[02] Core Registry Stack</h2>
+            <h2>Core Stack & Skills</h2>
             <div class="table-container">
                 <table>
                     <thead>
                         <tr>
                             <th>Category</th>
-                            <th>Registry Assets &amp; Skills</th>
+                            <th>Technologies & Skills</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Hardware &amp; Robotics</td>
-                            <td>Arduino (Uno, Nano), HC-SR04 Ultrasonic Sensors, Servo Motors, Microcontrollers</td>
+                            <td>Hardware & Robotics</td>
+                            <td>Arduino (Uno, Nano), HC-SR04 Ultrasonic Sensors, Servo Motors, 7-Segment Displays</td>
                         </tr>
                         <tr>
                             <td>Web Architecture</td>
-                            <td>HTML5, CSS3 (Flexbox &amp; Grid layouts, Responsive Interfaces)</td>
+                            <td>HTML5, CSS3 (Flexbox & Grid layouts)</td>
                         </tr>
                         <tr>
                             <td>Content Production</td>
-                            <td>Video Editing, Technical Video Production, Scripting &amp; SEO Optimization</td>
+                            <td>Video Editing (CapCut), Technical Tutorials, Scripting & SEO Production</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <!-- Operations Matrix -->
         <section id="operations">
-            <h2>[03] Active Pipelines</h2>
+            <h2>Current Operations</h2>
             <div class="grid">
-                <div class="matrix-card">
+                <div class="card">
                     <h3>Manthan Prototypes</h3>
-                    <p>My central development hub and portfolio architecture, built to showcase autonomous workflows and responsive web configurations.</p>
+                    <p>My central development hub and professional portfolio site, built to showcase autonomous systems and clean web interfaces.</p>
                 </div>
-                <div class="matrix-card">
+                <div class="card">
                     <h3>DeskTech</h3>
-                    <p>My dedicated YouTube media channel focused on creating screen recordings, hardware logic builds, and deep-dive technical tutorials.</p>
+                    <p>My dedicated YouTube platform focused on creating comprehensive tech tutorials, breaking down screen recordings, and reviewing tech mechanics.</p>
                 </div>
-                <div class="matrix-card">
+                <div class="card">
                     <h3>Autonomous Projects</h3>
-                    <p>Developing operational hardware setups, including an engineered Arduino-based Radar System synced to an ultrasonic sensor matrix.</p>
+                    <p>Developing hardware systems, including a functional Arduino-based Radar System integrated with a custom Tactical Command Center UI display.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Command Statement Block -->
-        <blockquote class="stealth-quote">
+        <blockquote>
             "The best way to predict the future is to program it into existence."
         </blockquote>
 
-        <!-- Direct Connect Gateways -->
-        <section id="connect" style="border: none; padding: 0;">
-            <h2>[04] Access Terminals</h2>
+        <section id="connect">
+            <h2>Connect</h2>
             <p>Looking to collaborate on a build, talk hardware architecture, or check out my source repositories?</p>
-            <div class="terminal-links">
-                <a href="https://github.com/Mnthn26" target="_blank" rel="noopener noreferrer">// GitHub</a>
-                <a href="https://www.youtube.com/@DeskTech26" target="_blank" rel="noopener noreferrer">// DeskTech YouTube</a>
+            <div class="contact-links">
+                <a href="https://github.com/Mnthn26" target="_blank">// GitHub</a>
+                <a href="https://www.youtube.com/@DeskTech26" target="_blank">// DeskTech YouTube</a>
                 <a href="mailto:dmanthan2013@gmail.com">// Email</a>
             </div>
         </section>
 
     </div>
 
-    <!-- Layout Base Footer -->
+   </div >
+
     <footer>
         <div class="footer-container">
             <div class="footer-socials">
-                <a href="https://github.com/mnthn26" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
-                    <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <a href="https://github.com/mnthn26" target="_blank" rel="noopener noreferrer" class="social-icon github" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 </a>
-                <a href="https://www.youtube.com/channel/UCJ097-h2m6bMtl9oHYCZjIQ" target="_blank" rel="noopener noreferrer" class="social-icon youtube-volt" aria-label="YouTube">
-                    <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                <a href="https://www.youtube.com/channel/UCJ097-h2m6bMtl9oHYCZjIQ" target="_blank" rel="noopener noreferrer" class="social-icon youtube-social" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
                 </a>
             </div>
             <p class="footer-copyright">&copy; 2026 Manthan Prototypes. All rights reserved.</p>
         </div>
     </footer>
 
+</body>
+</html>
 </body>
 </html>
