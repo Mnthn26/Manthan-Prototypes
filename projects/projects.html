@@ -3,80 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects & Labs | Manthan Prototypes</title>
+    <title>Projects &amp; Labs | Manthan Prototypes</title>
     <meta name="description" content="Explore the active hardware and software engineering prototypes built by Manthan Prototypes.">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="shortcut icon" href="../favicon/favicon.ico">
+    <!-- Links up one level back to the root style.css to keep design synced -->
     <link rel="stylesheet" href="../style.css">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png?v=2">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png?v=2">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png?v=2">
-    <link rel="shortcut icon" href="./favicon/favicon.ico?v=2" type="image/x-icon">
-    <link rel="manifest" href="./favicon/site.webmanifest?v=2">
-    <meta name="theme-color" content="#0a0a0c">
 </head>
 <body>
 
+    <!-- Global Navigation Header -->
     <header>
-        <div class="logo glow-text">Manthan Prototypes</div>
+        <div class="logo">M_PROTOTYPES</div>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html">Main</a></li>
                 <li><a href="../about/about.html">About</a></li>
                 <li><a href="../index.html#desktech">DeskTech</a></li>
-                <li><a href="projects.html" class="active" style="color: var(--accent);">Current Builds</a></li>
+                <li><a href="projects.html" class="active">Lab</a></li>
                 <li><a href="../index.html#contact">Connect</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Project Array Platform Layout -->
     <main class="container">
         <h2>Active Lab Repositories</h2>
-        <p style="color: var(--text-muted); margin-bottom: 40px;">Here is an in-depth look at the autonomous systems, hardware circuits, and software interfaces currently on the workbench.</p>
+        <p style="color: var(--text-muted); margin-bottom: 40px; font-size: 1.1rem;">An in-depth tracking matrix displaying autonomous modules and active user interface work currently on the bench.</p>
 
-        <div class="project-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 20px;">
+        <div class="project-grid">
             
-            <div class="project-card dynamic" style="border: 1px solid var(--border-color); background-color: var(--bg-card); padding: 30px; border-radius: 6px;">
-                <h3 style="font-family: monospace; color: var(--accent); margin-bottom: 10px;">[ Project: Autonomous Radar ]</h3>
-                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">An advanced object detection tracking system using ultrasonic hardware integration paired with a custom graphical tracking command center interface.</p>
-                <span style="font-family: monospace; font-size: 0.8rem; background: #1a1a22; padding: 4px 8px; border-radius: 4px; color: #a1a1aa;">Arduino // Processing // Electronics</span>
+            <!-- Radar Block Module -->
+            <div class="project-card dynamic">
+                <h3>[ Project: Autonomous Radar System ]</h3>
+                <p>An object detection tracking network built using an HC-SR04 ultrasonic sensor, hardware rotation components, and an integrated audio warning alert trigger.</p>
+                <span class="tech-tag">Arduino // C++ Logic // Hardware Circuits</span>
             </div>
 
-            <div class="project-card dynamic" style="border: 1px solid var(--border-color); background-color: var(--bg-card); padding: 30px; border-radius: 6px;">
-                <h3 style="font-family: monospace; color: var(--accent); margin-bottom: 10px;">[ Project: Core Web Hub ]</h3>
-                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">A clean, high-contrast, lightning-fast digital portfolio built utilizing modern structural architecture to display engineering builds seamlessly.</p>
-                <span style="font-family: monospace; font-size: 0.8rem; background: #1a1a22; padding: 4px 8px; border-radius: 4px; color: #a1a1aa;">HTML5 // CSS3 // Responsive Design</span>
+            <!-- Core Hub Web Module -->
+            <div class="project-card dynamic">
+                <h3>[ Project: Manthan Prototypes Core ]</h3>
+                <p>A high-contrast, lightning-fast technical landing application utilizing modern CSS layout modules, grid containers, and custom hardware styling assets.</p>
+                <span class="tech-tag">HTML5 // CSS3 // Interface Design</span>
             </div>
 
-            <div class="project-card dynamic" style="border: 1px dashed #3f3f46; background-color: var(--bg-card); padding: 30px; border-radius: 6px;">
-                <h3 style="font-family: monospace; color: var(--text-muted); margin-bottom: 10px;">[ System Matrix Initializing ]</h3>
-                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Microcontroller schematics, sensor array programming calibrations, and physical automation workflows are currently deployed on the testing bench.</p>
-                <span style="font-family: monospace; font-size: 0.8rem; background: #1a1a22; padding: 4px 8px; border-radius: 4px; color: #52525b;">Under Development...</span>
+            <!-- Under Development Matrix Block -->
+            <div class="project-card dynamic" style="border-style: dashed; border-color: var(--border-blue);">
+                <h3 style="color: var(--text-muted);">[ System Matrix Initializing ]</h3>
+                <p style="color: var(--text-muted);">Microcontroller schematics, custom UI layouts, and physical automation workflows are currently deployed on the testing bench.</p>
+                <span class="tech-tag" style="color: var(--text-muted); border-color: var(--border-blue); background: transparent;">Under Construction</span>
             </div>
 
         </div>
-
-    
-       
     </main>
 
-    </div >
-
+    <!-- Layout Base Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-socials">
-                <a href="https://github.com/mnthn26" target="_blank" rel="noopener noreferrer" class="social-icon github" aria-label="GitHub">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <a href="https://github.com/mnthn26" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 </a>
-                <a href="https://www.youtube.com/channel/UCJ097-h2m6bMtl9oHYCZjIQ" target="_blank" rel="noopener noreferrer" class="social-icon youtube-social" aria-label="YouTube">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                <a href="https://www.youtube.com/channel/UCJ097-h2m6bMtl9oHYCZjIQ" target="_blank" rel="noopener noreferrer" class="social-icon youtube-volt" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
                 </a>
             </div>
             <p class="footer-copyright">&copy; 2026 Manthan Prototypes. All rights reserved.</p>
         </div>
     </footer>
-
-</body>
-</html>
 
 </body>
 </html>
