@@ -1,338 +1,54 @@
-/* Minimalist Dark Tech Theme Variables */
-:root {
-    --bg-color: #0a0a0c;
-    --surface-color: #121216;
-    --border-color: #22222a;
-    --text-primary: #e4e4e7;
-    --text-secondary: #a1a1aa;
-    --accent-color: #ff3333; /* Tactical Red */
-    --accent-glow: rgba(255, 51, 51, 0.15);
-    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
-    --bg-dark: #0a0a0c;
-    --accent: #ffffff;
-    --text-muted: #a1a1aa;
-    --border-color-header: #27272a;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-primary);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
-}
-
-/* Base structural layout container */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 3rem 1rem;
-}
-
-/* ==========================================
-   MAIN GLOBAL HEADER / NAVIGATION (FIXED POSITION)
-   ========================================== */
-header.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 5%;
-    background-color: rgba(10, 10, 12, 0.95);
-    backdrop-filter: blur(8px); /* Optional: Adds a sleek modern glassy tech blur */
-    border-bottom: 1px solid var(--border-color-header);
-    position: fixed; /* Ensures it stays permanently stuck at the very top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-/* Offsets the body content so it doesn't render behind the fixed navigation bar */
-header.main-header + .container {
-    padding-top: 100px; 
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-nav a {
-    color: var(--text-muted);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: var(--accent);
-}
-
-/* Logo and text rendering styles */
-.logo.glow-text {
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--accent);
-    text-shadow: 
-        0 0 4px rgba(255, 255, 255, 0.3),
-        0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-/* ==========================================
-   PAGE TITLE (ABOUT_) STYLING
-   ========================================== */
-.page-title {
-    margin-bottom: 3rem;
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 1rem;
-}
-
-h1 {
-    font-family: var(--font-mono);
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-}
-
-h1 span {
-    color: var(--accent-color);
-}
-
-/* ==========================================
-   SECTIONS & INNER ELEMENTS STYLING
-   ========================================== */
-h2 {
-    font-family: var(--font-mono);
-    font-size: 1.25rem;
-    color: var(--text-primary);
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-}
-
-h2::before {
-    content: '';
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    background-color: var(--accent-color);
-    margin-right: 10px;
-}
-
-section {
-    margin-bottom: 3rem;
-}
-
-p {
-    color: var(--text-secondary);
-    margin-bottom: 1rem;
-    font-size: 1.05rem;
-}
-
-/* Tech Table styling */
-.table-container {
-    overflow-x: auto;
-    margin: 1.5rem 0;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: var(--font-mono);
-    font-size: 0.9rem;
-    background-color: var(--surface-color);
-    border: 1px solid var(--border-color);
-}
-
-th, td {
-    padding: 12px 16px;
-    text-align: left;
-    border-bottom: 1px solid var(--border-color);
-}
-
-th {
-    color: var(--text-primary);
-    background-color: rgba(255, 255, 255, 0.02);
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-}
-
-td:first-child {
-    color: var(--accent-color);
-    font-weight: 600;
-    width: 30%;
-}
-
-td {
-    color: var(--text-secondary);
-}
-
-/* Operations Grid */
-.grid {
+.bio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1rem;
-    margin-top: 1.5rem;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: start;
 }
 
-.card {
-    background-color: var(--surface-color);
-    border: 1px solid var(--border-color);
-    padding: 1.5rem;
-    border-radius: 4px;
-    transition: border-color 0.3s ease;
-}
-
-.card:hover {
-    border-color: var(--accent-color);
-}
-
-.card h3 {
-    font-family: var(--font-mono);
+.bio-text p {
+    color: var(--text-main);
     font-size: 1rem;
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
+    margin-bottom: 16px;
 }
 
-.card p {
-    font-size: 0.9rem;
-    margin-bottom: 0;
+.skills-matrix {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 24px;
+    border-radius: 12px;
 }
 
-/* Callout Quote */
-blockquote {
-    border-left: 2px solid var(--accent-color);
-    background: var(--accent-glow);
-    padding: 1rem 1.5rem;
-    margin: 2rem 0;
-    font-family: var(--font-mono);
-    font-style: italic;
-    color: var(--text-primary);
+.skills-matrix h3 {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 16px;
 }
 
-/* Links & Contact */
-.contact-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 1rem;
-    font-family: var(--font-mono);
-}
-
-.contact-links a {
-    color: var(--text-primary);
-    text-decoration: none;
-    border-bottom: 1px dashed var(--accent-color);
-    padding-bottom: 2px;
-    transition: color 0.2s ease;
-}
-
-.contact-links a:hover {
-    color: var(--accent-color);
-}
-
-/* Footer layout rules */
-/* ==========================================
-   MODERN & INTERACTIVE FOOTER (FIXED)
-   ========================================== */
-footer {
-    background-color: #0a0a0c; /* Fallback deep space black */
-    background-color: var(--bg-dark, #0a0a0c);
-    border-top: 1px solid var(--border-color, #27272a);
-    padding: 40px 20px;
-    width: 100%;
-    margin-top: auto; /* Pushes footer to bottom if page content is short */
-}
-
-.footer-container {
-    max-width: 1000px;
-    margin: 0 auto;
+.matrix-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    gap: 12px;
 }
 
-.footer-socials {
+.matrix-item {
     display: flex;
-    justify-content: center;
-    gap: 24px;
+    flex-direction: column;
+    border-left: 2px solid var(--border-color);
+    padding-left: 12px;
 }
 
-.social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: var(--bg-card, #121216);
-    border: 1px solid var(--border-color, #27272a);
-    color: var(--text-muted, #a1a1aa);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    text-decoration: none;
+.matrix-label {
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    color: var(--text-muted);
 }
 
-.social-icon svg {
-    width: 20px;
-    height: 20px;
-    /* Forces the SVG path to use the text color layout */
-    stroke: currentColor; 
-    fill: none;
+.matrix-value {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-weight: 500;
 }
 
-/* Hover Effects */
-.social-icon:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
-}
-
-.social-icon.github:hover {
-    color: #ffffff;
-    border-color: #ffffff;
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
-}
-
-.social-icon.youtube-social:hover {
-    color: #ff0000;
-    border-color: #ff0000;
-    box-shadow: 0 0 12px rgba(255, 0, 0, 0.2);
-}
-
-.footer-copyright {
-    color: #52525b;
-    font-size: 0.85rem;
-    font-family: monospace;
-    letter-spacing: 0.5px;
-    text-align: center;
-}
-@media (max-width: 600px) {
-    header.main-header {
-        position: static; /* Un-fixes navigation layout on narrow mobile displays for better spacing */
-        flex-direction: column;
-        gap: 12px;
-        padding: 15px;
-    }
-    header.main-header + .container {
-        padding-top: 1.5rem;
-    }
-    h1 { font-size: 2rem; }
-    td { display: block; width: 100% !important; }
-    th { display: none; }
-    tr { border-bottom: 1px solid var(--border-color); display: block; padding: 0.5rem 0; }
-    td { padding: 4px 16px; border: none; }
+@media (max-width: 768px) {
+    .bio-grid { grid-template-columns: 1fr; gap: 24px; }
 }
