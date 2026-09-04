@@ -9,36 +9,71 @@
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
+    <div class="app-layout">
+        
+        <!-- SIDEBAR NAVIGATION -->
+        <aside class="sidebar">
+            <a href="../index.html" class="logo-link">
+                <svg class="logo-svg-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 40">
+                    <text x="5" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="22" fill="#f8fafc">M<tspan font-weight="500" font-size="19" fill="#cbd5e1">nthn</tspan></text>
+                    <line x1="82" y1="8" x2="82" y2="32" stroke="#3f3f46" stroke-width="2.5" stroke-linecap="round"/>
+                    <text x="94" y="26" font-family="'Space Mono', monospace" font-weight="700" font-size="20" fill="#0ea5e9">26</text>
+                </svg>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="../index.html" class="nav-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                    Dashboard
+                </a>
+                <a href="about.html" class="nav-link active">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    About Profile
+                </a>
+                <a href="../desktech/desktech.html" class="nav-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                    DeskTech Feed
+                </a>
+                <a href="../projects/projects.html" class="nav-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    Lab Projects
+                </a>
+            </nav>
 
-    <header>
-        <a href="../index.html" class="logo-link">
-            <svg class="logo-svg-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 40">
-                <text x="5" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="22" fill="#0f172a">M<tspan font-weight="500" font-size="19" fill="#334155">nthn</tspan></text>
-                <line x1="82" y1="8" x2="82" y2="32" stroke="#cbd5e1" stroke-width="2.5" stroke-linecap="round"/>
-                <text x="94" y="26" font-family="'Space Mono', monospace" font-weight="700" font-size="20" fill="#0284c7">26</text>
-            </svg>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Main</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="../desktech/desktech.html">DeskTech</a></li>
-                <li><a href="../projects/projects.html">Lab</a></li>
-                <li><a href="../index.html#contact">Connect</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container">
-        <section style="background: transparent; border-bottom: none;">
-            <div class="bio-grid">
-                <div class="bio-text">
-                    <h2>Developer Profile</h2>
-                    <p>I am an independent hardware developer and system designer focused on writing direct micro-controller scripts and clean, functional frontend tracking applications.</p>
-                    <p>On this platform, I organize my current lab outputs, Arduino circuit models, and video asset timelines to catalog my build engineering stages.</p>
+            <div class="sidebar-footer">
+                <div class="footer-socials">
+                    <a href="https://github.com/mnthn26" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                        <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCJ097-h2m6bMtl9oHYCZjIQ" target="_blank" rel="noopener noreferrer" class="social-icon" title="YouTube">
+                        <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dmanthan2013@gmail.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="Email">
+                        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                    <a href="https://linktr.ee/mnthn26" target="_blank" rel="noopener noreferrer" class="social-icon" title="Linktree">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 19h20L12 2zM12 7l5 9H7l5-9z"></path></svg>
+                    </a>
                 </div>
-                <div class="skills-matrix">
-                    <h3>Bench Stack</h3>
+                <div class="copyright">&copy; 2026 Manthan Prototypes</div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            
+            <div class="page-header">
+                <h1 class="page-title">Developer Profile</h1>
+                <p class="page-subtitle">Background, expertise, and bench stack details.</p>
+            </div>
+
+            <div class="bio-grid">
+                <div class="bio-text content-card" style="padding: 32px;">
+                    <p>I am an independent hardware developer and system designer focused on writing direct micro-controller scripts and clean, functional frontend tracking applications.</p>
+                    <p style="margin-bottom: 0;">On this platform, I organize my current lab outputs, Arduino circuit models, and video asset timelines to catalog my build engineering stages.</p>
+                </div>
+                <div class="skills-matrix content-card" style="padding: 32px; background: linear-gradient(145deg, var(--bg-surface), var(--bg-card));">
+                    <h3 style="font-size: 1.2rem; color: var(--text-primary); margin-bottom: 20px;">Bench Stack</h3>
                     <div class="matrix-list">
                         <div class="matrix-item">
                             <span class="matrix-label">Systems:</span>
@@ -55,28 +90,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-socials">
-                <a href="https://github.com/mnthn26" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
-                    <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                </a>
-                <a href="https://www.youtube.com/channel/UCJ097-h2m6bMtl9oHYCZjIQ" target="_blank" rel="noopener noreferrer" class="social-icon" title="YouTube">
-                    <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
-                </a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dmanthan2013@gmail.com" target="_blank" rel="noopener noreferrer" class="social-icon" title="Email">
-    <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-</a>
-                <a href="https://linktr.ee/mnthn26" target="_blank" rel="noopener noreferrer" class="social-icon" title="Linktree">
-                    <svg viewBox="0 0 24 24"><path d="M12 2L2 19h20L12 2zM12 7l5 9H7l5-9z"></path></svg>
-                </a>
-            </div>
-            <p class="footer-copyright">&copy; 2026 Manthan Prototypes.</p>
-        </div>
-    </footer>
-
+            
+        </main>
+    </div>
 </body>
 </html>
