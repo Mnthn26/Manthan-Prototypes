@@ -1,3 +1,5 @@
+/* LEGACY (v2 sidebar/bento theme) — kept for history. The Neon Lab v3 theme
+   consolidates all styling in /style.css; this file is no longer linked. */
 .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
