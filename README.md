@@ -1,61 +1,63 @@
-# ⚡ Manthan Prototypes — Neon Lab (v3)
+# ◼ DOMIC — Editorial Studio (v4)
 
-> Futuristic, highly interactive 3D portfolio theme. All original bio info, projects,
-> social links and hardware/software descriptions are preserved — only the visual
-> layer was rebuilt.
+> Minimalist, modern **editorial portfolio** theme. The entire visual layer was
+> rebuilt as pure HTML + CSS (no frameworks, no JavaScript required) to match the
+> reference art direction: warm sage/stone paper, near-black charcoal type,
+> condensed-grotesque display faces paired with high-contrast italic serif.
 
-**Live stack:** vanilla HTML/CSS/JS (no build step, GitHub Pages ready) +
-Three.js · GSAP + ScrollTrigger · Lenis smooth scroll, all via CDN with graceful
-fallbacks when offline.
+**Live stack:** vanilla HTML/CSS only — CSS-only fullscreen menu (checkbox hack),
+CSS scroll-driven reveal animations (`animation-timeline: view()`, with graceful
+fallback), fluid `clamp()` typography, fully responsive from 320px to desktop.
 
 ## ✨ What's inside
 
-| Feature | Implementation |
+| Section | Implementation |
 | :--- | :--- |
-| **3D hero tech core** | `js/three-scene.js` — floating microchip (die + PCB + pins), wireframe shells, 3 orbit rings, satellites, rising sparks, hex pad. Cursor-tracked with damped inertia + live telemetry readouts |
-| **Particle universe background** | Same module — dual drifting particle layers, two scroll-reactive grid floors, additive glow sprites, mouse-parallax camera |
-| **Glitch headline** | Cyberpunk RGB-split glitch pulses on “MANTHAN PROTOTYPES” + typewriter operator line |
-| **3D tilt cards** | `js/tilt.js` — cursor x/y tilt with rAF damping, cursor-tracked specular sheen + neon edge beam |
-| **Skill cloud** | `js/skills-orbit.js` — 8 tech nodes (Arduino, C++, Python, HTML/CSS, JS, Arch Linux, Circuit Design, VS Code) in a projected 3D orbit; selecting a node expands its dossier and ignites related project tags |
-| **Scroll experience** | `js/animations.js` — Lenis inertia scrolling locked to the render loop, GSAP reveals, hero parallax, pinned horizontal build-pipeline (desktop), scroll-spy HUD nav, animated counters, cursor glow, magnetic buttons |
-| **Live GitHub matrix** | `js/github.js` — `mnthn26` repos, sorted by updated, with language tags + stars + “Source Files” links |
-| **Live DeskTech feed** | `js/youtube.js` — channel `UCJ097…` via RSS, click-to-play embeds (iframes load only on intent) |
-| **Theme system** | `style.css` — CSS custom properties (`--void #05070A`, `--cyan #00F0FF`, `--violet #8A2BE2/#7000FF`, `--emerald #00FF87`), glassmorphism + neon-glow utilities |
-| **Brand + light/dark** | `assets/logo.svg` M-arrow mark in sidebar/nav/footer/preloader/veil; `js/theme.js` toggle (or `T` key), persisted, OS-aware, live 3D re-tint. Favicon = classic config (inline SVG M26 + original `favicon/` set) |
+| **Top bar** | `● DOMIC` brand left, black pill `MENU` toggle right → fullscreen charcoal overlay nav (pure CSS, keyboard-focusable) |
+| **Hero grid** | 3 columns: intro + massive `A UI/UX / & Brand / DESIGNER` headline (Oswald bold + Playfair italic) + `CONTACT ME` pill with arrow disc · circular portrait on a darker sage vertical band · stacked stats (15+ / 280+ / *99% / 50) |
+| **Core pillars bar** | 4-column hairline-divided service breakdown (User-Centered Design · Brand Identity & Strategy · Responsive & Modern UI · Seamless Prototyping) |
+| **Trusted by** | Tracker title + right-aligned caption, 4×2 bordered logo-badge grid (inline SVG marks) |
+| **About / philosophy** | Split layout: `CRAFTING MEANINGFUL BRANDS & INTUITIVE EXPERIENCES` left, serif lead + body right |
+| **Portfolio** | `PORTFOLIO` header + right caption, large rounded project cards (Soundwave / Atelier Nord / Flowboard) with title, description, year and tag pill |
+| **Footer / contact** | Editorial CTA (`LET'S MAKE *something* EXTRAORDINARY`), email pill, socials, hairline bottom bar |
+
+## 🎨 Design tokens (`style.css`)
+
+| Token | Value | Use |
+| :--- | :--- | :--- |
+| `--paper` | `#D9DAD4` | sheet background (warm off-white sage) |
+| `--frame` | `#BBBCB5` | page frame around the sheet |
+| `--band` | `#B4B7AF` | hero portrait band |
+| `--ink` | `#22231D` | deep charcoal headings/body |
+| `--ink-soft` / `--muted` | `#4E4F47` / `#7C7E74` | secondary text / captions |
+| `--pill` | `#191A14` | near-black pills & menu overlay |
+| Type pairing | Oswald (condensed grotesque) + Playfair Display (serif / italic serif) | display vs. editorial body |
 
 ## 📂 Structure
 
 ```
-index.html                  — 3D Spatial Command Dashboard (sidebar + bento console: hero, holo-avatar, DeskTech panel, link directory, live metrics)
-about/about.html            — Developer Profile dossier
-desktech/desktech.html      — DeskTech Broadcast Feed (full)
-projects/projects.html      — Active Lab Repositories (full)
-style.css                   — complete Neon Lab design system
-script.js                   — boot orchestrator (preloader + module wiring)
-js/three-scene.js           — background universe + hero core
-js/animations.js            — Lenis + GSAP reveals, pinning, HUD interactions
-js/tilt.js                  — 3D card tilt + specular system
-js/skills-orbit.js          — interactive skill cloud
-js/github.js · js/youtube.js— live data pipelines
-js/theme.js                 — light/dark mode command (toggle, persistence, 3D sync)
-js/dashboard.js             — page-veil tab transitions, drawer, clock, metrics, avatar boot
-assets/logo.svg · logo.png  — brand mark (vector + 512px transparent render)
-about/about.css, desktech/desktech.css — legacy v2 styles (kept for history, unlinked)
+index.html                  — editorial portfolio homepage (this theme)
+style.css                   — complete Editorial Studio design system
+assets/img/                 — portrait + project photography
+favicon/                    — icon set (unchanged)
+about/ · desktech/ · projects/ — legacy Neon Lab sub-pages (v3), now styled
+                                 via legacy/neon.css so they keep working
+legacy/neon.css             — archived v3 Neon Lab stylesheet
+js/ · script.js             — v3 modules, still used by the legacy sub-pages
 ```
 
-## ♿ Performance & resilience
+## ♿ Accessibility & resilience
 
-- DPR capped (≤2 desktop, ≤1.25 low-power), particle counts scale down on mobile,
-  canvases pause off-screen / when the tab is hidden.
-- `prefers-reduced-motion` → static frames, no smooth-scroll hijack, no tilt.
-- No WebGL / blocked CDN → CSS fallback core, IntersectionObserver reveals, native
-  smooth scroll. Content is never trapped invisible (`anim-armed` gating).
-- Semantic HTML, skip link, keyboard-operable skill cloud + video cards, alt text.
+- Semantic landmarks, skip link, alt text, `aria-label`s on icon-only controls.
+- Menu toggle is a real (visually hidden) checkbox — Tab + Space works, page
+  scroll locks while open (`:has()`), overlay degrades to a static page if
+  `:has` is unsupported.
+- `prefers-reduced-motion` disables reveals, smooth scroll and hover motion.
+- Google Fonts loaded with full local fallback stacks (Arial Narrow / Georgia).
 
 ## 🚀 Run locally
 
 ```bash
-# any static server from the repo root, e.g.
 python3 -m http.server 8000
 # → http://localhost:8000
 ```
