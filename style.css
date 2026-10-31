@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DOMIC — Editorial Studio Theme (v4)
+   Manthan Prototypes — Editorial Studio Theme (v4)
    Minimalist, modern editorial portfolio.
    Pure CSS: no frameworks, no JavaScript required.
 
@@ -565,6 +565,10 @@ body:has(.menu-overlay:target) :is(.brand, .topbar .menu-pill) {
   font-size: 1.05rem;
   letter-spacing: .09em;
   text-transform: uppercase;
+}
+.project-meta h3.handle {   /* keep community handles in their original case */
+  text-transform: none;
+  letter-spacing: .04em;
 }
 .meta-right {
   display: flex;

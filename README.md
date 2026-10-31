@@ -1,4 +1,4 @@
-# ◼ DOMIC — Editorial Studio (v4)
+# ◼ Manthan Prototypes — Editorial Studio (v4)
 
 > Minimalist, modern **editorial portfolio** theme. The entire visual layer was
 > rebuilt as pure HTML + CSS (no frameworks, no JavaScript required) to match the
@@ -13,13 +13,13 @@ fallback), fluid `clamp()` typography, fully responsive from 320px to desktop.
 
 | Section | Implementation |
 | :--- | :--- |
-| **Top bar** | `● DOMIC` brand left, black pill `MENU` toggle right → fullscreen charcoal overlay nav (pure CSS, keyboard-focusable) |
-| **Hero grid** | 3 columns: intro + massive `A UI/UX / & Brand / DESIGNER` headline (Oswald bold + Playfair italic) + `CONTACT ME` pill with arrow disc · circular portrait on a darker sage vertical band · stacked stats (15+ / 280+ / *99% / 50) |
-| **Core pillars bar** | 4-column hairline-divided service breakdown (User-Centered Design · Brand Identity & Strategy · Responsive & Modern UI · Seamless Prototyping) |
-| **Trusted by** | Tracker title + right-aligned caption, 4×2 bordered logo-badge grid (inline SVG marks) |
-| **About / philosophy** | Split layout: `CRAFTING MEANINGFUL BRANDS & INTUITIVE EXPERIENCES` left, serif lead + body right |
-| **Portfolio** | `PORTFOLIO` header + right caption, large rounded project cards (Soundwave / Atelier Nord / Flowboard) with title, description, year and tag pill |
-| **Footer / contact** | Editorial CTA (`LET'S MAKE *something* EXTRAORDINARY`), email pill, socials, hairline bottom bar |
+| **Top bar** | `● MANTHAN` brand left, black pill `MENU` toggle right → fullscreen charcoal overlay nav (pure CSS `:target`, keyboard-focusable) |
+| **Hero grid** | 3 columns: intro + massive `WEB CODER / & Hardware / CREATOR` headline (Oswald bold + Playfair italic) + `CONTACT ME` pill with arrow disc · circular portrait of Manthan on a darker sage vertical band · stacked stats (12+ repos / 9+ DeskTech builds / 8 core techs / 2 communities) |
+| **Core pillars bar** | 4-column hairline-divided service breakdown (HTML/CSS Web Coding · Hardware & Electronics · Tech Content Creation · Rapid UI Prototyping) |
+| **Trusted by** | Tracker title + right-aligned caption, 4×2 bordered badge grid of the real stack (GitHub · YouTube · Instagram · Arduino · ESP32 · VS Code · Arch Linux · Linktree) |
+| **About / philosophy** | Split layout: `CRAFTING CLEAN WEB EXPERIENCES & CURIOUS CIRCUITS` left, serif lead + bio right |
+| **Portfolio** | `PORTFOLIO` header + right caption, large rounded project cards (DeskTech · Manthan Prototypes · @aiverse.kannada) with title, description, year and tag pill |
+| **Footer / contact** | Editorial CTA (`LET'S BUILD *something* EXTRAORDINARY`), email pill, socials, hairline bottom bar |
 
 ## 🎨 Design tokens (`style.css`)
 
@@ -38,7 +38,7 @@ fallback), fluid `clamp()` typography, fully responsive from 320px to desktop.
 ```
 index.html                  — editorial portfolio homepage (this theme)
 style.css                   — complete Editorial Studio design system
-assets/img/                 — portrait + project photography
+assets/img/                 — Manthan's portrait + real project photography
 favicon/                    — icon set (unchanged)
 about/ · desktech/ · projects/ — legacy Neon Lab sub-pages (v3), now styled
                                  via legacy/neon.css so they keep working
