@@ -14,10 +14,10 @@ fallback), fluid `clamp()` typography, fully responsive from 320px to desktop.
 | Section | Implementation |
 | :--- | :--- |
 | **Top bar** | `● MANTHAN` brand left, black pill `MENU` toggle right → fullscreen charcoal overlay nav (pure CSS `:target`, keyboard-focusable) |
-| **Hero grid** | 3 columns: intro + massive `WEB CODER / & Hardware / CREATOR` headline (Oswald bold + Playfair italic) + `CONTACT ME` pill with arrow disc · circular portrait of Manthan on a darker sage vertical band · stacked stats (12+ repos / 9+ DeskTech builds / 8 core techs / 2 communities) |
-| **Core pillars bar** | 4-column hairline-divided service breakdown (HTML/CSS Web Coding · Hardware & Electronics · Tech Content Creation · Rapid UI Prototyping) |
+| **Hero grid** | 3 columns: intro + massive `WEB CODER / & Hardware / FOUNDER` headline (Oswald bold + Playfair italic) + `CONTACT ME` pill with arrow disc · circular cartoon avatar of Manthan on a darker sage vertical band · stacked stats (12+ repos / 9+ DeskTech episodes / 2 startups / 8 core techs) |
+| **Core pillars bar** | 4-column hairline-divided service breakdown (Startup MVPs & Landing Pages · HTML/CSS Web Coding · Hardware & Electronics · Tech Content Creation) |
 | **Trusted by** | Tracker title + right-aligned caption, 4×2 bordered badge grid of the real stack (GitHub · YouTube · Instagram · Arduino · ESP32 · VS Code · Arch Linux · Linktree) |
-| **About / philosophy** | Split layout: `CRAFTING CLEAN WEB EXPERIENCES & CURIOUS CIRCUITS` left, serif lead + bio right |
+| **About / philosophy** | Split layout: `CRAFTING STARTUP VENTURES, CLEAN WEB & CURIOUS CIRCUITS` left, serif lead + bio right |
 | **Portfolio** | `PORTFOLIO` header + right caption, large rounded project cards (DeskTech · Manthan Prototypes · @aiverse.kannada) with title, description, year and tag pill |
 | **Footer / contact** | Editorial CTA (`LET'S BUILD *something* EXTRAORDINARY`), email pill, socials, hairline bottom bar |
 
@@ -38,7 +38,7 @@ fallback), fluid `clamp()` typography, fully responsive from 320px to desktop.
 ```
 index.html                  — editorial portfolio homepage (this theme)
 style.css                   — complete Editorial Studio design system
-assets/img/                 — Manthan's portrait + real project photography
+assets/img/                 — cartoon avatar + real project photography
 favicon/                    — icon set (unchanged)
 about/ · desktech/ · projects/ — legacy Neon Lab sub-pages (v3), now styled
                                  via legacy/neon.css so they keep working
